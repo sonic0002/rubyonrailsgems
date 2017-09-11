@@ -12,7 +12,11 @@ This includes gems related to webservers which would drive the RoR app.
 * [unicorn](https://rubygems.org/gems/unicorn/versions/5.1.0): unicorn is an HTTP server for Rack applications designed to only serve fast clients on low-latency, high-bandwidth connections and take advantage of features in Unix/Unix-like kernels.
 * [puma](https://github.com/puma/puma): Puma is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications. It can be well cooperated with JRuby on Rails app.
 
-## Asynchronous jobs
+# Database
+This includes gems related to database handling or optimization.
+* [strong_migrations](https://github.com/ankane/strong_migrations): This is a gem which catches unsafe database migrations at development time so that it would not cause migration issues in production environment. It also helps improve the migration performance(especailly good for Postgres).
+
+# Asynchronous jobs
 This includes jobs gem which help run aynchronous tasks in a RoR application.
 
 * [delayed_job](https://github.com/collectiveidea/delayed_job): A process based asynchronous task processing gem which can be ran at background. It will fork the specified number of processes to execute the tasks.
@@ -22,6 +26,7 @@ This includes jobs gem which help run aynchronous tasks in a RoR application.
 # Performance
 This includes gems which are help developers understand the RoR application performance and how to opitimize the application when there is performance issue.
 
+* [memory_profiler](https://github.com/SamSaffron/memory_profiler): It is to measure memory usage of specific code blocks. It is frequently used while developing code.
 * [derailed_benchmarks](https://github.com/schneems/derailed_benchmarks): It can be ran to check the memory usage of a static gem and a dynamic running RoR app. It provides many commands which can be used to measure performance at different aspects. Including memory, object, gc, time etc.
 
 This list would be updated frequently and pull requests are welcomed.
